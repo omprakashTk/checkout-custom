@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/bin/sh
 
-echo "Hello, world!"
+sh -c "git clone $* /tmp/repo && cp -r /tmp/repo/. $GITHUB_WORKSPACE"
+
+
 
